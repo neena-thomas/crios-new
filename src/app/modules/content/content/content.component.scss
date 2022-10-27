@@ -1,0 +1,92 @@
+.content-container {
+    height: 650px;
+}
+
+.cont-holder {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248 243 243 / 28%);
+
+}
+
+.img-holder1 {
+    background: url('../../../../assets/images/ic1.png') no-repeat;
+    background-size: cover;
+}
+
+.img-holder2 {
+    background: url('../../../../assets/images/ic2.png') no-repeat;
+    background-size: cover;
+}
+
+.cont-wrapper {
+    text-align: left;
+    width: 50%;
+}
+
+.main-heading {
+    font-size: 2em !important;
+}
+
+.sub-content {
+    margin-top: 5% !important;
+    font-size: 0.5em;
+}
+
+.just-left {
+    justify-content: flex-start !important;
+}
+
+.cont-wrapper1 {
+    margin-left: 10%;
+}
+
+/* Media queries*/
+
+/*Mobile devices*/
+@media screen and (min-width: 320px) {
+    .content-container {
+        height: 200px;
+    }
+
+    .main-heading {
+        font-size: 0.75em !important;
+    }
+}
+
+@media screen and (min-width: 480px) {}
+
+/*Tablets, iPad and small screens*/
+@media screen and (min-width: 600px) {
+    .content-container {
+        height: 400px;
+    }
+
+    .main-heading {
+        font-size: 1em !important;
+    }
+}
+
+@media screen and (min-width: 800px) {}
+
+/*Desktops, laptops*/
+@media screen and (min-width: 1024px) {
+    .content-container {
+        height: 650px;
+    }
+
+    .main-heading {
+        font-size: 1.5em !important;
+    }
+}
+
+/* Large Screens*/
+@media screen and (min-width: 1281) {
+    .content-container {
+        height: 675px;
+    }
+
+    .main-heading {
+        font-size: 2em !important;
+    }
+}

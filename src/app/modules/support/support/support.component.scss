@@ -1,0 +1,95 @@
+.media-container {
+    height: 650px;
+}
+
+.img-holder1 {
+    background: url('../../../../assets/images/sn2-bg.png') no-repeat;
+    background-size: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-position: right;
+}
+
+.app-img-holder {
+    background: url('../../../../assets/images/app2.png') no-repeat;
+    width: 70%;
+    height: 100%;
+    background-size: 60%;
+    background-position: center;
+
+}
+
+.cont-holder {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cont-wrapper {
+    text-align: left;
+    width: 50%;
+}
+
+.main-heading {
+    font-size: 2em !important;
+    color: rgb(22, 176, 248);
+    ;
+}
+
+.sub-content {
+    margin-top: 5% !important;
+}
+
+.just-right {
+    justify-content: flex-end !important;
+}
+
+/* Media queries*/
+
+/*Mobile devices*/
+@media screen and (min-width: 320px) {
+    .media-container {
+        height: 200px;
+    }
+
+    .main-heading {
+        font-size: 0.75em !important;
+    }
+}
+
+@media screen and (min-width: 480px) {}
+
+/*Tablets, iPad and small screens*/
+@media screen and (min-width: 600px) {
+    .media-container {
+        height: 400px;
+    }
+
+    .main-heading {
+        font-size: 1em !important;
+    }
+}
+
+@media screen and (min-width: 800px) {}
+
+/*Desktops, laptops*/
+@media screen and (min-width: 1024px) {
+    .media-container {
+        height: 650px;
+    }
+
+    .main-heading {
+        font-size: 1.5em !important;
+    }
+}
+
+/* Large Screens*/
+@media screen and (min-width: 1281) {
+    .media-container {
+        height: 675px;
+    }
+
+    .main-heading {
+        font-size: 2em !important;
+    }
+}

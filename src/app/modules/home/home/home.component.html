@@ -1,0 +1,22 @@
+<div class="home-wrapper container-div flex general-container">
+    <div class="main-header">
+      <p class="main-heading"> Simple PSD template with cool stuff</p>
+      <p class="sub-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <div class="button-holder">
+      <button class="general-btn" (click)="openModal()">EXPLORE TEMPLATE</button>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal"  [hidden]="!isModalOpen">
+    <div class="content">
+      <div class="logo-container"></div>
+      <p class="content1">Thanks for downloading our template</p>
+      <p class="content2">Hope that you enjoy it well! Check our site also</p>
+      <div class="button-holder">
+        <a href="www.smyu.co" target="_blank" class="modal-btn" (click)="closeModal()">www.smyu.co</a>
+      </div>
+    </div>
+  
+  </div>
+  <div class="modal-backdrop" [hidden]="!isModalOpen" (click)="closeModal()"></div>

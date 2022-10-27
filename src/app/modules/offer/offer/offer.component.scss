@@ -1,0 +1,124 @@
+.sub-content {
+    font-size: 0.65em !important;
+}
+
+.offer-container {
+    margin: 5% 10%;
+}
+
+.content-columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.content-col-sub {
+    text-align: center;
+    align-items: center;
+    margin: 0 3%;
+}
+
+.content-col-img {
+    height: 50px;
+    display: flex;
+
+}
+
+.content-img1 {
+    background: url('../../../../assets/images/c1.png') center no-repeat;
+}
+
+.content-img2 {
+    background: url('../../../../assets/images/c2.png') center no-repeat;
+}
+
+.content-img3 {
+    background: url('../../../../assets/images/c3.png') center no-repeat;
+}
+
+.content-img4 {
+    background: url('../../../../assets/images/c4.png') center no-repeat;
+}
+
+.sub-content-col {
+    font-size: 0.5em;
+    color: whitesmoke;
+}
+
+.button-holder {
+    margin: 5%;
+}
+
+.main-heading-col {
+    font-size: 0.75em;
+}
+
+.content-col-img {
+    background-size: contain;
+}
+
+/* Media queries*/
+
+/*Mobile devices*/
+@media screen and (min-width: 320px) {
+    .main-heading-col {
+        font-size: 0.5em;
+    }
+
+    .sub-content-col {
+        font-size: 0.3em;
+    }
+
+    .content-col-img {
+        background-size: 50%;
+    }
+}
+
+@media screen and (min-width: 480px) {}
+
+/*Tablets, iPad and small screens*/
+@media screen and (min-width: 600px) {
+    .main-heading-col {
+        font-size: 0.65em;
+    }
+
+    .sub-content-col {
+        font-size: 0.45em;
+    }
+
+    .content-col-img {
+        background-size: contain;
+    }
+}
+
+@media screen and (min-width: 800px) {}
+
+/*Desktops, laptops*/
+@media screen and (min-width: 1024px) {
+    .main-heading-col {
+        font-size: 0.75em;
+    }
+
+    .sub-content-col {
+        font-size: 0.5em;
+    }
+
+    .content-col-img {
+        background-size: contain;
+    }
+}
+
+/* Large Screens*/
+@media screen and (min-width: 1281) {
+    .main-heading-col {
+        font-size: 0.75em;
+    }
+
+    .sub-content-col {
+        font-size: 0.5em;
+    }
+
+    .content-col-img {
+        background-size: contain;
+    }
+}

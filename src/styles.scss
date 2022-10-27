@@ -1,1 +1,170 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url('assets/fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+body {
+    background-color: white;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat Regular";
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.main-header {
+    text-align: center;
+    justify-items: center;
+    margin: 0 0 2em 0;
+}
+
+.main-heading {
+    font-size: 1.5em;
+    margin: 2px 0;
+}
+
+.sub-content {
+    margin: 2px 0;
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+.button-holder {
+    text-align: center;
+    justify-items: center;
+}
+
+.general-btn {
+    background-color: white;
+    border: none;
+    height: 2em;
+    color: rgb(22, 176, 248);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.5em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px whitesmoke;
+}
+
+.general-container {
+    flex-direction: column;
+}
+
+/* Media queries*/
+
+/*Mobile devices*/
+@media screen and (min-width: 320px) {
+    .main-header {
+        margin: 0 0 1em 0;
+    }
+
+    .main-heading {
+        font-size: 0.75em;
+    }
+
+    .sub-content {
+        font-size: 0.35em;
+    }
+
+    .general-btn {
+        height: 1.5em;
+        font-size: 0.3em;
+        padding: 0.25em 0.5em;
+    }
+
+}
+
+@media screen and (min-width: 480px) {}
+
+/*Tablets, iPad and small screens*/
+@media screen and (min-width: 600px) {
+    .main-header {
+        margin: 0 0 1.5em 0;
+    }
+
+    .main-heading {
+        font-size: 0.85em;
+    }
+
+    .sub-content {
+        font-size: 0.45em;
+    }
+
+    .general-btn {
+        height: 1.75em;
+        font-size: 0.4em;
+        padding: 0.35em 0.75em;
+    }
+
+}
+
+@media screen and (min-width: 800px) {}
+
+/*Desktops, laptops*/
+@media screen and (min-width: 1024px) {
+    .main-header {
+        margin: 0 0 2em 0;
+    }
+
+    .main-heading {
+        font-size: 1.5em;
+    }
+
+    .sub-content {
+        font-size: 0.65em;
+    }
+
+    .general-btn {
+        height: 2em;
+        font-size: 0.5em;
+        padding: 0.5em 1em;
+    }
+}
+
+/* Large Screens*/
+@media screen and (min-width: 1281) {
+    .main-header {
+        margin: 0 0 2em 0;
+    }
+
+    .main-heading {
+        font-size: 1.5em;
+    }
+
+    .sub-content {
+        font-size: 0.75em;
+    }
+
+    .general-btn {
+        height: 2em;
+        font-size: 0.5em;
+        padding: 0.5em 1em;
+    }
+}

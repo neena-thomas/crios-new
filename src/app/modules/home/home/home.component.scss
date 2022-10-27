@@ -1,0 +1,300 @@
+.container-div {
+    background: url('../../../../assets/images/landing-bg.png') no-repeat;
+    height: 675px;
+    background-size: 100%;
+  }
+  
+  .modal-backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: black;
+    opacity: 0.5;
+    position: fixed;
+  }
+  
+  .logo-wrapper {
+    position: absolute;
+    top: -15%;
+    left: 40%;
+  }
+  
+  .logo-container {
+    background: url("../../../../assets/images/logo.png") no-repeat;
+    box-shadow: 0 0 20px 5px whitesmoke;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    background-size: 60%;
+    background-position: center;
+    position: absolute;
+    top: -30%;
+    left: 35%;
+    background-color: white;
+  }
+  
+  .modal {
+    top: 0;
+    min-width: 250px;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 40001;
+    background: #fff;
+    margin-top: 200px;
+    margin-left: 10%;
+    animation-name: fadeIn_Modal;
+    animation-duration: 0.8s;
+  
+  }
+  
+  .content {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+  
+    .content1 {
+      font-size: 1.5em;
+      color: #d92020;
+      font-weight: bold;
+      margin-top: 15%;
+      margin-bottom: 0;
+    }
+  
+    .content2 {
+      margin-top: 2%;
+      font-size: 0.75em;
+      color: whitesmoke;
+    }
+  
+    .button-holder {
+      margin-top: 10%;
+    }
+  
+    .modal-btn {
+      background-color: #d92020 !important;
+      color: white;
+      border: none;
+      height: 2em;
+      text-align: center;
+      text-decoration: none;
+      font-size: 0.5em;
+      padding: 0.5em 1em;
+      cursor: pointer;
+    }
+  }
+  
+  /****ANIMATIONS****/
+  
+  @keyframes fadeIn_Modal {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  /* Media queries*/
+  
+  /*Mobile devices*/
+  @media screen and (min-width: 320px) {
+    .container-div {
+      height: 210px;
+    }
+  
+    .modal {
+      width: 250px;
+      height: 150px;
+      margin-left: calc(50vw - 125px);
+      margin-top: 150px;
+    }
+  
+    .content {
+      height: 150px;
+  
+      .content1 {
+        font-size: 0.75em;
+        margin-top: 25%;
+      }
+  
+      .content2 {
+        margin-top: 1%;
+        font-size: 0.45em;
+      }
+  
+      .button-holder {
+        margin-top: 5%;
+      }
+  
+      .modal-btn {
+        height: 2em;
+        font-size: 0.5em;
+        padding: 0.75em;
+      }
+    }
+  
+    .logo-container {
+      height: 75px;
+      width: 75px;
+      border-radius: 75px;
+      background-size: 40%;
+      left: 35%;
+      top: -30%
+    }
+  
+  }
+  
+  @media screen and (min-width: 480px) {}
+  
+  /*Tablets, iPad and small screens*/
+  @media screen and (min-width: 600px) {
+    .container-div {
+      height: 400px;
+    }
+  
+    .modal {
+      width: 500px;
+      height: 250px;
+      margin-left: calc(50vw - 250px);
+      margin-top: 170px;
+    }
+  
+    .content {
+      width: 100%;
+      height: 190px;
+  
+      .content1 {
+        font-size: 1em;
+        margin-top: 15%;
+      }
+  
+      .content2 {
+        margin-top: 1.5%;
+        font-size: 0.65em;
+      }
+  
+      .button-holder {
+        margin-top: 7.5%;
+      }
+  
+      .modal-btn {
+        height: 3em;
+        font-size: 0.6em;
+        padding: 0.75em;
+      }
+  
+    }
+  
+    .logo-container {
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+      background-size: 50%;
+      left: 40%;
+      top: -20%
+    }
+  
+  }
+  
+  @media screen and (min-width: 800px) {}
+  
+  /*Desktops, laptops*/
+  @media screen and (min-width: 1024px) {
+    .container-div {
+      height: 650px;
+    }
+  
+    .modal {
+      width: 500px;
+      height: 300px;
+      margin-left: calc(50vw - 250px);
+      margin-top: 200px;
+    }
+  
+    .content {
+      width: 100%;
+      height: 220px;
+  
+      .content1 {
+        font-size: 1.5em;
+        margin-top: 20%;
+      }
+  
+      .content2 {
+        margin-top: 2%;
+        font-size: 0.75em;
+      }
+  
+      .button-holder {
+        margin-top: 10%;
+      }
+  
+      .modal-btn {
+        height: 4em;
+        font-size: 0.75em;
+        padding: 1em;
+      }
+      .logo-container {
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+        background-size: 60%;
+        top: -30%;
+        left: 35%;
+      }
+  
+    }
+  }
+  
+  /* Large Screens*/
+  @media screen and (min-width: 1281) {
+    .container-div {
+      height: 675px;
+    }
+  
+    .modal {
+      width: 600px;
+      height: 400px;
+      margin-left: calc(50vw - 300px);
+      margin-top: 200px;
+    }
+  
+    .content {
+      width: 100%;
+      height: 250px;
+  
+      .content1 {
+        font-size: 1.5em;
+        margin-top: 20%;
+      }
+  
+      .content2 {
+        margin-top: 2%;
+        font-size: 0.75em;
+      }
+  
+      .button-holder {
+        margin-top: 10%;
+      }
+  
+      .modal-btn {
+        height: 5em;
+        font-size: 1em;
+        padding: 1.5em;
+      }
+      .logo-container {
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+        background-size: 60%;
+        top: -30%;
+        left: 35%;
+      }
+  
+    }
+  }

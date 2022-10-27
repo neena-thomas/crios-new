@@ -1,0 +1,173 @@
+.testimonial-container {
+    height: 650px;
+    background-color: rgb(248 243 243 / 28%);
+}
+
+.img-holder1 {
+    background: url('../../../../assets/images/Snowflake.png') no-repeat;
+    background-size: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.app-img-holder {
+    background: url('../../../../assets/images/user-photo.png') no-repeat;
+    width: 70%;
+    height: 100%;
+    background-size: 90%;
+    background-position: bottom;
+}
+
+.cont-holder {
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cont-wrapper {
+    text-align: left;
+    width: 50%;
+}
+
+.main-heading {
+    font-size: 2em !important;
+    color: red;
+    font-weight: normal !important;
+}
+
+.sub-content {
+    margin: 5% 0 5% 0 !important;
+}
+
+.just-left {
+    justify-content: flex-start !important;
+}
+
+.cont-wrapper1 {
+    margin: 20% 0 0 10%;
+}
+
+.author-name {
+    p {
+        margin: 2% 0 !important;
+    }
+
+    .name {
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 0.75em;
+        color: whitesmoke;
+    }
+}
+
+/* Media queries*/
+
+/*Mobile devices*/
+@media screen and (min-width: 320px) {
+    .testimonial-container {
+        height: 200px;
+    }
+
+    .main-heading {
+        font-size: 0.75em !important;
+    }
+
+    .author-name {
+        p {
+            margin: 1% 0 !important;
+        }
+
+        .name {
+            font-size: 0.5em;
+            ;
+        }
+
+        .title {
+            font-size: 0.35em;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {}
+
+/*Tablets, iPad and small screens*/
+@media screen and (min-width: 600px) {
+    .testimonial-container {
+        height: 400px;
+    }
+
+    .main-heading {
+        font-size: 1em !important;
+    }
+
+    .author-name {
+        p {
+            margin: 1.5% 0 !important;
+        }
+
+        .name {
+            font-size: 0.75em;
+            ;
+        }
+
+        .title {
+            font-size: 0.5em;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {}
+
+/*Desktops, laptops*/
+@media screen and (min-width: 1024px) {
+    .testimonial-container {
+        height: 650px;
+    }
+
+    .main-heading {
+        font-size: 1.5em !important;
+    }
+
+    .author-name {
+        p {
+            margin: 2% 0 !important;
+        }
+
+        .name {
+            font-size: 1em;
+        }
+
+        .title {
+            font-size: 0.75em;
+        }
+    }
+}
+
+/* Large Screens*/
+@media screen and (min-width: 1281) {
+    .testimonial-container {
+        height: 675px;
+    }
+
+    .main-heading {
+        font-size: 2em !important;
+    }
+
+    .author-name {
+        p {
+            margin: 2% 0 !important;
+        }
+
+        .name {
+            font-size: 1.5em;
+            ;
+        }
+
+        .title {
+            font-size: 0.85em;
+        }
+    }
+}
