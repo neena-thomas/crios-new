@@ -6,7 +6,7 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LazyLoadingComponent } from './lazy-loading/lazy-loading/lazy-loading.component';
+import { LazyLoadingComponent } from './lazy-loading/lazy-loading.component';
 
 const routes: Routes = [
   {

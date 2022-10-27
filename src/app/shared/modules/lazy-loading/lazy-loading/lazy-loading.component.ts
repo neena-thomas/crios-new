@@ -38,7 +38,7 @@ export class LazyLoadingComponent implements OnInit {
   ngOnInit(): void {
   }
   ngAfterViewInit() {
-    import('../../../../components/header/header.component').then((comp) => {
+    import('../../../components/header/header.component').then((comp) => {
       const component = comp['HeaderComponent'];
       this.headerContainer.createComponent(component);
     });
@@ -47,43 +47,43 @@ export class LazyLoadingComponent implements OnInit {
   ngDoCheck() {
     let lastLoadedSeg = this.LazyLoadService.getCurrentSegment();
     switch (lastLoadedSeg) {
-      case 'header': import('../../../../../modules/home/home/home.component').then((comp) => {
+      case 'header': import('../../../../modules/home/home/home.component').then((comp) => {
         const component = comp['HomeComponent'];
         this.homeContainer.createComponent(component);
       });
         this.LazyLoadService.setCurrentSegment('home');
         break;
-      case 'home': import('../../../../../modules/offer/offer/offer.component').then((comp) => {
+      case 'home': import('../../../../modules/offer/offer/offer.component').then((comp) => {
         const component = comp['OfferComponent'];
         this.offerContainer.createComponent(component);
       });
         this.LazyLoadService.setCurrentSegment('offer');
         break;
-      case 'offer': import('../../../../../modules/content/content/content.component').then((comp) => {
+      case 'offer': import('../../../../modules/content/content/content.component').then((comp) => {
         const component = comp['ContentComponent'];
         this.contentContainer.createComponent(component);
       });
         this.LazyLoadService.setCurrentSegment('content');
         break;
-      case 'content': import('../../../../../modules//media/media/media.component').then((comp) => {
+      case 'content': import('../../../../modules//media/media/media.component').then((comp) => {
         const component = comp['MediaComponent'];
         this.mediaContainer.createComponent(component);
       });
         this.LazyLoadService.setCurrentSegment('media');
         break;
-      case 'media': import('../../../../../modules/support/support/support.component').then((comp) => {
+      case 'media': import('../../../../modules/support/support/support.component').then((comp) => {
         const component = comp['SupportComponent'];
         this.supportContainer.createComponent(component);
       });
         this.LazyLoadService.setCurrentSegment('testimonials');
         break;
-      case 'testimonials': import('../../../../../modules/testimonials/testimonials/testimonials.component').then((comp) => {
+      case 'testimonials': import('../../../../modules/testimonials/testimonials/testimonials.component').then((comp) => {
         const component = comp['TestimonialsComponent'];
         this.testimonialContainer.createComponent(component);
       });
         this.LazyLoadService.setCurrentSegment('footer');
         break;
-      case 'footer': import('../../../../components/footer/footer.component').then((comp) => {
+      case 'footer': import('../../../components/footer/footer.component').then((comp) => {
         const component = comp['FooterComponent'];
         this.footerContainer.createComponent(component);
       });
